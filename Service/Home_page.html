@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/Style/Home_page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body >
+        <header class="header">
+            <a href="#" class="logo">Kagiso Mokgobi</a>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <nav class="nav-bar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about" >About</a>
+                <a href="#service" >Services</a>
+                <a href="#project" >Project</a>
+                <a href="#contact" >Contact</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, my name is</h3>
+                <h1>Kagiso Mokgobi</h1>
+                <h3>And am a <span class="multiple-text"></span></h3>
+                <p>An aspiring software developer with a strong foundation in C#, Python, Sql, and a passion for problem-solving</p>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="/Images/CURRICULUM VITAE OF KAGISO MOKGOBI.pdf" download class="btn" id="cv-btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="/Images/Kagiso_homepage_image.png" alt="developer's image">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="/Images/Snap.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Us</span></h2>
+                <h3>Software Developer</h3>
+                <p>Hey there! Am junior software developer who love building useful, clean, and modern software. 
+                    I have passion in building smart, practical software using C#, Python, and SQL. I love creating tools that actually solve problems and help business grow.
+                </p>
+                <p>
+                    With the experience I gained through out my years in university from software development and entrepreneurship,
+                    I understand what it takes to turn ideas into real, working products. So if you are looking to level up your tech in your business, I would love to help.
+                </p>
+                <p>
+                    Am all about clean code, simple solutions, and helping people launch and scale things that matter.
+                </p>
+                
+            </div>
+        </section>
+
+        <section class="service" id="service">
+            <h2 class="heading">My <span>Services</span></h2>
+            <div class="service-content">
+                <div class="service-box">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Software Developer</h3>
+                    <p>Backend developer using C#, and .Net for reliable high-performance applications.</p>
+                   
+                </div>
+    
+                <div class="service-box">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Streamline wordkflows, tackle repetitive task, and overall data analysis using pandas in visual studio code.</p>
+                   
+                </div>
+    
+                <div class="service-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>SQL Developer</h3>
+                    <p>From designing database to writing complex queries and optimizing performance</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <h2 class="heading">Latest <span>Projects</span></h2> 
+            <div class="project-content">
+
+                <div class="project-box">
+                    <img src="/Images/Project1.png" alt="">
+                    <div class="project-layer">
+                        <h4>2024 Final Year Project</h4>
+                        <p>Team work web-application designed to help make hospital wards work easy. 
+                            From admitting patient, to streamlining patient record.
+                        </p>
+                        <a href="#project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <p class="heading" id="heading">I'm very much responsive</p>
+            <form onsubmit="emailSend(); reset(); return false;">
+                <div class="input-box">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full name" required>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="number" id="number" placeholder="Mobile number">
+                    <input type="text" name="emailsubject" id="emailsubject" placeholder="Email subject">
+                </div>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Kagiso Mokgobi | All Rights Reserved</p>
+
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+
+  
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="/Book/Home_page.js"></script>
+    </body>
+</html>
