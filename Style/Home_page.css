@@ -196,9 +196,85 @@ span{
     margin: 1rem 0 3rem;
 }
 
-.project {
+
+.education{
     background: #fafafa;
-    color:#333;
+    color: #333;
+    min-height: 80vh;
+}
+.education .quote {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Nunito",sans-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+.education .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.education .education-container .box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+}
+.education .education-container .box:hover{
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0,0,0,.3);
+}
+.education .education-container .box .image {
+    flex: 1 1 20rem;
+    width: 100%;
+}
+.education .education-container .box img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.education .education-container .box .education-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 1 1 70rem;
+}
+.education .education-container .box .education-content h3 {
+    font-size: 2.5rem;
+    color:#ce6a27;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1rem;
+}
+.education .education-container .box .education-content p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+.education h4 {
+    font-size: 2rem;
+    color: rgb(34,109,0);
+    text-align: left;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.project {
+    background: #333;
+    color: #fafafa;;
 }
 .project h2 {
     margin-bottom: 4rem;
@@ -208,6 +284,7 @@ span{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
+    color: #333;
 }
 .project-content .project-box {
     position: relative;
@@ -264,7 +341,10 @@ span{
     font-size: 2rem;
     color:white;
 }
-
+.contact{
+    background: #fafafa;
+    color: #333;
+}
 .contact h2{
     margin-bottom: .1rem;
 }
@@ -292,6 +372,7 @@ span{
     background: white;
     color:black;
     border-radius: .8rem;
+    border: 2px solid #333;
     margin: .7rem 0;
 }
 .contact form .input-box input {
@@ -304,19 +385,114 @@ span{
     margin-top: 2rem;
     cursor:pointer;
 }
+.hidden {
+    display: none;
+  }
+  
+  #thankYouMessage {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
+.footer,footer{
+    min-height: auto;
+    padding-top: 0;
     background: #2e2e2e;
 }
-.footer-text {
-    font-size: 1.6rem;
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.footer-iconTop a{
+.footer .box-container .box {
+    flex: 1 1 25rem;
+    margin: 2.5rem;
+}
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.7rem 0;
+    text-transform: none;
+}
+.footer .box-container .box p i {
+    padding-right: 1rem;
+    color:#ce6a27;
+}
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.3rem 0;
+    display: block;
+}
+.footer .box-container .box a:hover {
+    color:#ce6a27;
+}
+.footer .box-container .box .share {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    transition: 0.2s;
+    background: white;
+    color:#ce6a27;
+    border: none;
+}
+.footer .box-container .box .share a:hover {
+    background: #ce6a27;
+    transform: scale(0.98);
+    border: 0.1rem solid rgb(180,178,178);
+    color: white;
+}
+.footer .credit {
+    padding: 1rem 0 0 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Nunito",sans-serif;
+    color: white;
+    border-top: 0.1rem solid #fff3;
+}
+.footer .credit a {
+    color:#ce6a27;
+}
+.footer .fa {
+    color: white;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    animation: pound 0.35s infinite alternate;
+}
+@-webkit-keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+/* .footer-text {
+    font-size: 1.6rem;
+} */
+
+/* .footer-iconTop a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -331,6 +507,22 @@ span{
 .footer-iconTop a i{
     font-size: 2.4rem;
     color:#333;
+} */
+
+#scroll-top {
+    position: fixed;
+    top: -140%;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    background: #ce6a27;
+    color: white;
+    border-radius: 50%;
+    transition: 1s linear;
+    z-index: 1000;
+}
+#scroll-top.active {
+    top: calc(100% - 12rem);
 }
 @media (max-width: 1200px) {
     html {
@@ -416,6 +608,29 @@ span{
 }
 
 @media (max-width: 617px){
+    .education .education-container .box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .education .education-container .box .image {
+        width: 100%;
+        height: 25rem;
+    }
+    .education .education-container .box .education-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        flex-wrap: wrap;
+        flex: 0;
+    }
+    .education .btns {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-wrap: wrap;
+    }
+    
     .project-content {
         grid-template-columns: 1fr;
     }
@@ -435,4 +650,14 @@ span{
     .contact form .input-box input {
         width: 100%;
     }
+    .footer .box-container .box {
+        margin: 1.5rem;
+    }
+    .footer .box-container .box p {
+        padding: 0.7rem;
+    }
+    .footer .box-container .box .share a {
+        padding: 1.2rem;
+    }
 }
+
