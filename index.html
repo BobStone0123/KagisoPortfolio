@@ -86,12 +86,31 @@
             </div>
         </section>
 
+        <section class="education" id="education">
+            <h1 class="heading">My <span>Education</span></h1>
+            <p class="quote">Education is key to success</p>
+
+            <div class="education-container">
+                <div class="box">
+                    <div class="image">
+                        <img draggable="false" src="./Images/3d-render-graduation-cap-with-diploma-certificate.jpg">
+                    </div>
+                    
+                    <div class="education-content">
+                        <h3>Diploma of Information Technology</h3>
+                        <p>Nelson Mandela University</p>
+                        <h4>2022-2025</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="project" id="project">
             <h2 class="heading">Latest <span>Projects</span></h2> 
             <div class="project-content">
 
                 <div class="project-box">
-                    <img src="./Images/Project1.png" alt="">
+                    <img src="/Images/Project1.png" alt="">
                     <div class="project-layer">
                         <h4>2024 Final Year Project</h4>
                         <p>Team work web-application designed to help make hospital wards work easy. 
@@ -103,6 +122,7 @@
 
             </div>
         </section>
+
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
             <p class="heading" id="heading">I'm very much responsive</p>
@@ -118,19 +138,54 @@
                 <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
+            <p id="thankYouMessage" class="hidden">Thanks for your feedback!</p>
         </section>
 
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2025 by Kagiso Mokgobi | All Rights Reserved</p>
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Portfolio</h3>
+                    <p>Thank you for visiting my personal portfolio website.</p>
+                </div>
 
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#home"><i class="fas fa-chevron-circle-right"></i>Home</a>
+                    <a href="#about"><i class="fas fa-chevron-circle-right"></i>About</a>
+                    <a href="#service"><i class="fas fa-chevron-circle-right"></i>Service</a>
+                    <a href="#education"><i class="fas fa-chevron-circle-right"></i>Education</a>
+                    <a href="#project"><i class="fas fa-chevron-circle-right"></i>Project</a>
+                    <a href="#contact"><i class="fas fa-chevron-circle-right"></i>Contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i>+27 456 7898</p>
+                    <p><i class="fas fa-envelope"></i>kgmokgobi@gmail.com</p>
+                    <p><i class="fas fa-map-marked-alt"></i>South Africa</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-linkedin" target="_blank"></a>
+                        <a href="#" class="fab fa-github" target="_blank"></a>
+                        <a href="#" class="fab fa-facebook" target="_blank"></a>
+                        <a href="#" class="fab fa-instagram" target="_blank"></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-            </div>
+        </section>
+        <footer>
+            <p>2025 &copy; By Kagiso Mokgobi | All rights reserved</p>
         </footer>
+        <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
 
-  
+        <!--jquery cdn-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!--typed.js cdn-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!---vanilla tlilt.js links-->
+         <!--scroll reveal anim-->
+         <script src="https://unpkg.com/scrollreveal"></script>
+         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="./Book/Home_page.js"></script>
