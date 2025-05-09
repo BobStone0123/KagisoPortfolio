@@ -14,7 +14,7 @@ function showPopupMessage(message, isSuccess = true) {
         setTimeout(() => {
             popup.style.display = 'none';
         }, 300); // match transition time
-    }, 4000); // show for 3 seconds
+    }, 4000);
 }
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
